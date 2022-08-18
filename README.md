@@ -1,7 +1,8 @@
 # cloneCoding-web2
-## _네이버 블로그_
+## _네이버 블로그 화면 구현_
 
 [![대회공지](https://avatars.githubusercontent.com/u/12232098?s=200&v=4)](https://saber-pullover-010.notion.site/5502610adcda46bfaa9896eef4b91e96)
+
 2022 클론코딩 대회 웹2조 입니다
 
 대회 진행: 2022년 8월 17일(수) ~ 21일(일), 총 5일
@@ -26,16 +27,12 @@
 
 It requires [Node.js](https://nodejs.org/)  to run.
 
-Change directory to the project directory, and start the server
+Change directory to the project directory, and start the server :
 
 ```sh
 cd naverblog_clonecoding
 npm start
 ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser. 
 
