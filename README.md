@@ -21,7 +21,7 @@
 - 직접 네이버 블로그 앱에서 컴포넌트 작동 방식/디자인 고민
 
 ## api 정리
-![api정리](https://github.com/CLUG-kr/cloneCoding-web2/blob/main/api%EC%A0%95%EB%A6%AC.jpg)
+![api정리](/api%EC%A0%95%EB%A6%AC.jpg)
 
 ## Installation
 
