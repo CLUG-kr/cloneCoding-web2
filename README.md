@@ -31,7 +31,10 @@ Change directory to the project directory, and start the server :
 
 ```sh
 cd naverblog_clonecoding
-npm start
+npm install --global yarn
+npm install axios
+npm install
+yarn start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser. 
