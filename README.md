@@ -7,9 +7,8 @@
 
 대회 진행: 2022년 8월 17일(수) ~ 21일(일), 총 5일
 
-**Language :** Workframe: React
-
 ## Introduction
+**Language :** Workframe: React
 제공받은 api를 활용해 **네이버 블로그** 화면을 구현해보았습니다.
 - 블로그 메인 화면 구현
 - 블로그 댓글 화면 구현 (선택)
