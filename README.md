@@ -1,9 +1,9 @@
 # cloneCoding-web2
+2022 클론코딩 대회 웹2조 입니다
 ## _네이버 블로그 화면 구현_
 
 [![대회공지](https://avatars.githubusercontent.com/u/12232098?s=200&v=4)](https://saber-pullover-010.notion.site/5502610adcda46bfaa9896eef4b91e96)
 
-2022 클론코딩 대회 웹2조 입니다
 
 **대회 진행:** 2022년 8월 17일(수) ~ 21일(일), 총 5일
 
