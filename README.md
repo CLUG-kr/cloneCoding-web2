@@ -39,3 +39,11 @@ yarn start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser. 
 
+if already port-3000 is using, just kill the server and retry  it :
+```sh
+cd naverblog_clonecoding
+npx kill-port 3000
+yarn start
+```
+
+
