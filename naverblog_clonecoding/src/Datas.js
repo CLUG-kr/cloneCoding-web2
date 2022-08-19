@@ -54,9 +54,10 @@ function Datas() {
     return (
         <>
             <ul>
-            {datas.data.posts.map(data => (
-                <li key={data.postId}>
+            {datas.data.banner.map(data => (
+                <li key={data.blogId}>
                 {data.title}
+                <img src={data.bannerImage}></img>
                 </li>
             ))}
             </ul>
