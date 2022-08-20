@@ -69,3 +69,20 @@ yarn start
 내용
 하트 수
 
+## 사항 수정
+
+### 폰트 사이즈
+
+문제 상황: 폰트 사이즈가 10px 미만으로 내려가지 않음.
+원인: 구글 설정>모양>글꼴맞춤설정>최소글꼴크기 옵션이 디폴트 10px로 맞춰져 있어서.
+해결: 해당 코드 참조.
+
+```javaScript
+  font-size:10px;
+  -webkit-transform:scale(0.5); //0.5 -> 50%
+  display: inline-block;
+```
+
+### img 폴더 위치 변경
+
+img 폴더 위치를 naverblog_clonecoding -> public으로 변경
