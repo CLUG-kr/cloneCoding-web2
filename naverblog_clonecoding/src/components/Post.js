@@ -97,11 +97,10 @@ const PostRightBlock = styled.div`
 `;
 
 const Share = styled.div`
+    width: 10px;
     height: 13px;
+    margin-left: 142px;
     font-size: 10px;
-    display: flex;
-    justify-content: right;
-    align-items: center;
     color: #495057;
     cursor: pointer;
 `;
@@ -179,4 +178,4 @@ function Post({ _id, _title, _content, _createdAt, _heartNum, _commentNum, _isLi
 export default Post;
 
 
-//border: 0px solid #ced4da;
+//border: 0.5px solid #ced4da;
