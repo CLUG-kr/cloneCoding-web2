@@ -38,6 +38,7 @@ const PostCategory = styled.div`
     font-weight: 900;
     text-align: center;
     line-height: 3;
+    cursor: pointer;
 `;
 
 const PostCategoryFolder = styled.div`
@@ -47,6 +48,7 @@ const PostCategoryFolder = styled.div`
     color: #808080;
     text-align: right;
     line-height: 3.2;
+    cursor: pointer;
 `;
 
 const PostViewBlock = styled.div`
@@ -63,6 +65,7 @@ const PostView = styled.div`
     height: 13px;
     font-size: 13px;
     margin-right: 8px;
+    cursor: pointer;
 `;
 
 
@@ -113,33 +116,25 @@ function PostList() {
 
   // 위의 조건들에서 모두 벗어났을 때는 다음을 리턴해라
   // 근데 받아온 데이터가 몇개일지 모르니까 map 사용
-  /* <사용한 태그 목록>
-      ul: unordered list 순서가 없는 리스트 만들 때 사용
-          즉 출력하면 다음과 같이 렌더링됨.
-          - 항목1
-          - 항목2
-          - 항목3
-          ...
-      li: ul이나 ol 안에 들어가는 요소를 의미한다.
-  */
 
   return(
     <>
-      <PostFilterBlock>
+      <PostFilterBlock onClick={() => {console.log("PostCategory click")}}>
         <PostCategoryBlock>
           <PostCategory>전체글</PostCategory>
           <PostCategoryFolder><BsChevronDown/></PostCategoryFolder>
         </PostCategoryBlock>
         <PostViewBlock>
-          <PostView><HiViewGrid/></PostView>
-          <PostView><MdViewList/></PostView>
-          <PostView><MdViewAgenda/></PostView>
+          <PostView onClick={() => {console.log("PostView1 click")}}><HiViewGrid/></PostView>
+          <PostView onClick={() => {console.log("PostView2 click")}}><MdViewList/></PostView>
+          <PostView onClick={() => {console.log("PostView3 click")}}><MdViewAgenda/></PostView>
         </PostViewBlock>
       </PostFilterBlock>
       <PostListBlock>
         {datas.data.posts.map(data => (
           <Post 
             key={data.postId}
+            _id={data.postId}
             _title={data.title}
             _content={data.content}
             _createdAt={data.createdAt}
