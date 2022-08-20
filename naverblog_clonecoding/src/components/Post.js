@@ -145,7 +145,9 @@ function Post({ _id, _title, _content, _createdAt, _heartNum, _commentNum, _isLi
     return (
     <PostBlock>
         <PostLeftBlock>
-            <Thumbnail src="img/post1.png" onClick={() => {console.log("Post click")}} />
+            {_id===1 && <Thumbnail src="img/post1.png" onClick={() => {console.log("Post click")}} />}
+            {_id===2 && <Thumbnail src="img/post2.png" onClick={() => {console.log("Post click")}} />}
+            {_id===3 && <Thumbnail src="img/post3.png" onClick={() => {console.log("Post click")}} />}
             <ButtonBlock>
                 {_isLike===true && 
                     <Heart onClick={() => {console.log("heart click")}}>
