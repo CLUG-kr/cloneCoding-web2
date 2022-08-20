@@ -119,8 +119,8 @@ function PostList() {
 
   return(
     <>
-      <PostFilterBlock onClick={() => {console.log("PostCategory click")}}>
-        <PostCategoryBlock>
+      <PostFilterBlock>
+        <PostCategoryBlock onClick={() => {console.log("PostCategory click")}}>
           <PostCategory>전체글</PostCategory>
           <PostCategoryFolder><BsChevronDown/></PostCategoryFolder>
         </PostCategoryBlock>
