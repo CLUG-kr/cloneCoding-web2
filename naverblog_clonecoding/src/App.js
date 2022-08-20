@@ -1,6 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import BlogTemplate from './components/BlogTemplate';
+import PostList from './components/PostList';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -12,7 +13,9 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <BlogTemplate>안녕하세요</BlogTemplate>
+      <BlogTemplate>
+        <PostList />
+      </BlogTemplate>
     </>
   );
 }

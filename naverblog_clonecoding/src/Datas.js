@@ -63,9 +63,7 @@ function Datas() {
             </ul>
             <button onClick={fetchDatas}>다시 불러오기</button>
         </>
-        );
+    );
 }
 
 export default Datas;
-
-
