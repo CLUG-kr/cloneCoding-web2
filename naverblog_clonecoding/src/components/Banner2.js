@@ -73,7 +73,7 @@ const Num = styled.div`
     width: 15px;
     height: 13px;
     font-size: 10px;
-    transform: translate(-22%, 0%) scale(0.8);
+    //transform: translate(-22%, 0%) scale(0.8);
     text-align: center;
     line-height: 1.3;
 `;
@@ -127,8 +127,8 @@ const BannerBottomMiddleBottomBlock = styled.div`
 
 const Finder2 = styled.div`
     margin-top: 8px;
-    width: 25px;
-    height: 25px;
+    width: 17px;
+    height: 17px;
     font-size: 25px;
     line-height: 0.5;
     text-align: center;
@@ -188,7 +188,6 @@ function Banner2(){
                 <Finder onClick={() => {console.log("list click")}}><BsList/></Finder>
             </FinderBlock>
             <BannerMiddleBlock>
-                <Num>{data.todayCount}</Num>
                 <h1>오늘 {data.todayCount} · 전체 {data.totalCount}</h1>
                 <h2>{data.blogName} </h2>
             </BannerMiddleBlock>
