@@ -65,6 +65,7 @@ const PostViewBlock = styled.div`
 const PostView = styled.div`
     width: 17px;
     height: 17px;
+    transform: scaleX(-1);
     font-size: 19px;
     margin-right: 13.5px;
     margin-bottom: 5px;
