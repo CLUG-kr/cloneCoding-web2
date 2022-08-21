@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 import { FiSearch } from 'react-icons/fi';
 import { BsList, BsThreeDotsVertical } from 'react-icons/bs';
 import Banner from './Banner';
+import Numeral from 'numeral';
 
 
 /*
@@ -26,12 +27,14 @@ const BannerBlock = styled.div`
     
     h1 {
         margin: 0;
-        font-size: 10px;
+        font-size: 12px;
+        font-weight: 100;
         color: #ffffff;
     }
     h2 {
         margin: 0;
-        font-size: 20px;
+        font-size: 22px;
+        font-weight: 500;
         color: #ffffff;
     }
     h3 {
@@ -52,19 +55,20 @@ const FinderBlock = styled.div`
 `;
 
 const Finder = styled.div`
+    margin-top: 5px;
     font-size: 21px;
     margin-right: 8px;
     cursor: pointer;
 `;
 
 const List = styled.div`
-    margin-top: -3px;
+    margin-top: 2px;
     font-size: 26px;
     cursor: pointer;
 `;
 
 const BannerMiddleBlock = styled.div`
-    margin-top: 130px;
+    margin-top: 120px;
     height: 50px; 
     margin-left: 13px;
 `;
@@ -79,16 +83,15 @@ const Num = styled.div`
 `;
 
 const BannerBottomBlock = styled.div`
-    margin-top: 10px;
-    height: 70px; 
+    margin-top: 15px;
     margin-left: 13px;
     color: #FFFFFF;
     display: flex;
 `;
 
 const ProfileImage = styled.img`
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 100px;
     background: #FFF5E3;
     margin-top: 10px;
@@ -97,7 +100,7 @@ const ProfileImage = styled.img`
 `;
 
 const BannerBottomMiddleBlock = styled.div`
-    width: 230px;
+    width: 200px;
     height: 100px; 
     margin-left: 10px;
     color: #FFFFFF;
@@ -178,7 +181,6 @@ function Banner2(){
 
   // 위의 조건들에서 모두 벗어났을 때는 다음을 리턴해라
   // 근데 받아온 데이터가 몇개일지 모르니까 map 사용
-
   return(
     <div>
         {datas.data.banner.map(data => (
@@ -188,14 +190,14 @@ function Banner2(){
                     <List onClick={() => {console.log("list click")}}><BsList/></List>
                 </FinderBlock>
                 <BannerMiddleBlock>
-                    <h1>오늘 {data.todayCount} · 전체 {data.totalCount}</h1>
+                    <h1>오늘 {data.todayCount.toLocaleString()} · 전체 {data.totalCount.toLocaleString()}</h1>
                     <h2>{data.blogName} </h2>
                 </BannerMiddleBlock>
                 <BannerBottomBlock>
                     <ProfileImage></ProfileImage>
                     <BannerBottomMiddleBlock>
                         <ProfileName>{data.profileName}</ProfileName>
-                        <BannerBottomMiddleBottomBlock>{data.blogCategory} {data.neighborNum}명의 이웃</BannerBottomMiddleBottomBlock>
+                        <BannerBottomMiddleBottomBlock>{data.blogCategory} · {data.neighborNum.toLocaleString()}명의 이웃</BannerBottomMiddleBottomBlock>
                     </BannerBottomMiddleBlock>
                     <Finder2 onClick={() => {console.log("더보기")}}><BsThreeDotsVertical/></Finder2>
                 </BannerBottomBlock>
