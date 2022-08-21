@@ -122,9 +122,6 @@ function PostList() {
 
   return(
     <>
-      {datas.data.banner.map(data => (
-        <img src={data.bannerImage} /> 
-      ))}
       <PostFilterBlock>
         <PostCategoryBlock onClick={() => {console.log("PostCategory click")}}>
           <PostCategory>전체글</PostCategory>
@@ -156,3 +153,12 @@ function PostList() {
 }
 
 export default PostList;
+
+
+/*
+
+{datas.data.banner.map(data => (
+        <img src={data.bannerImage} /> 
+      ))}
+
+  */
