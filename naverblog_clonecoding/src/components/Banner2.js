@@ -26,9 +26,7 @@ const BannerBlock = styled.div`
     padding-top: 40px;
     padding-bottom: 2px;
     border-bottom: 1px solid #e9ecef;
-    
-    width: 315px;
-    height: 370px;
+
     background-size: 315px 370px;
     
     h1 {
@@ -51,7 +49,7 @@ const BannerBlock = styled.div`
 
 const FinderBlock = styled.div`
     width: 50px;
-    height: px;
+    height: 50px;
     color: #ffffff;
     display: flex;
     margin-left: 260px;
@@ -191,14 +189,14 @@ function Banner2(){
             </FinderBlock>
             <BannerMiddleBlock>
                 <Num>{data.todayCount}</Num>
-                <h1>오늘 0{data.todayCount} · 전체 2,807 {data.totalCount}</h1>
-                <h2>Dear {data.blogName} </h2>
+                <h1>오늘 {data.todayCount} · 전체 {data.totalCount}</h1>
+                <h2>{data.blogName} </h2>
             </BannerMiddleBlock>
             <BannerBottomBlock>
                 <ProfileImage></ProfileImage>
                 <BannerBottomMiddleBlock>
-                    <ProfileName>솝트 디자인{data.profileName}</ProfileName>
-                    <BannerBottomMiddleBottomBlock>일상·생각 {data.blogCategory} 38{data.neighborNum}명의 이웃</BannerBottomMiddleBottomBlock>
+                    <ProfileName>{data.profileName}</ProfileName>
+                    <BannerBottomMiddleBottomBlock>{data.blogCategory} {data.neighborNum}명의 이웃</BannerBottomMiddleBottomBlock>
                 </BannerBottomMiddleBlock>
                 <Finder2 onClick={() => {console.log("더보기")}}><BsThreeDotsVertical/></Finder2>
             </BannerBottomBlock>
