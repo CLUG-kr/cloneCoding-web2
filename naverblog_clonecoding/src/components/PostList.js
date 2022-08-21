@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import styled from 'styled-components';
+import styled , { css } from 'styled-components';
 import { MdViewAgenda, MdViewList } from 'react-icons/md';
 import { HiViewGrid } from 'react-icons/hi';
 import { BsChevronDown } from 'react-icons/bs';
@@ -35,10 +35,11 @@ const PostCategoryBlock = styled.div`
 `;
 
 const PostCategory = styled.div`
+    font-family: "Noto Sans CJK KR";
     width: 40.5px;
     height: 100%;
-    font-size: 12px;
-    font-weight: 900;
+    font-size: 13px;
+    font-weight: bold;
     text-align: center;
     line-height: 3;
     cursor: pointer;
