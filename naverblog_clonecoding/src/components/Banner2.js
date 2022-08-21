@@ -108,11 +108,12 @@ const BannerBottomMiddleBlock = styled.div`
 `;
 
 const ProfileBlock = styled.div`
+    width: 150px;
     display: flex;
 `;
 
 const ProfileName = styled.div`
-    width: 170px;
+    width: 70px;
     margin: 0;
     font-size: 13px;
     font-weight: 600;
@@ -123,15 +124,20 @@ const ProfileName = styled.div`
 `;
 
 const Neighbor = styled.div`
-    width: 57px;
+    width: 50px;
     height: 13px;
-    font-size: 10px;
+    font-size: xx-small;
+    font-weight: 10;
+    transform: translate(-5%, -15%) scale(0.8);
+    display: inline-block;
     text-align: center;
     border: solid 0.5px #FFFFFF;
     border-radius: 100px;
     margin-left: 7px;
-    margin-top: 11px;
+    margin-top: 16px;
     margin-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
     cursor: pointer;
 `;
 
