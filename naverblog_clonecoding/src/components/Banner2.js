@@ -27,7 +27,7 @@ const BannerBlock = styled.div`
     
     h1 {
         margin: 0;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 100;
         color: #ffffff;
     }
@@ -83,7 +83,7 @@ const Num = styled.div`
 `;
 
 const BannerBottomBlock = styled.div`
-    margin-top: 15px;
+    margin-top: 18px;
     margin-left: 13px;
     color: #FFFFFF;
     display: flex;
@@ -100,29 +100,35 @@ const ProfileImage = styled.img`
 `;
 
 const BannerBottomMiddleBlock = styled.div`
-    width: 200px;
+    width: 100px;
     height: 100px; 
     margin-left: 10px;
+    margin-right: 50px;
     color: #FFFFFF;
 `;
 
 
 const ProfileName = styled.div`
-    width: 230px;
+    width: 170px;
     margin: 0;
     font-size: 13px;
+    font-weight: 600;
     color: #ffffff;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-bottom: 2px;
     line-height: 1.3;
 `;
 
 const BannerBottomMiddleBottomBlock = styled.div`
-    width: 230px;
+    width: 170px;
     height: 30px;
     margin: 0;
     margin-top: 3px;
-    font-size: 5px;
+    font-size: xx-small;
+    transform: translate(-5%, -15%) scale(0.9);
+    display: inline-block;
+    letter-spacing:-0.5px;
+    font-weight: 50;
     color: #ffffff;
     margin-bottom: 5px;
     line-height: 1.5;
@@ -132,10 +138,10 @@ const Finder2 = styled.div`
     margin-top: 8px;
     width: 17px;
     height: 17px;
-    font-size: 25px;
-    line-height: 0.5;
-    text-align: center;
-    margin-right: 8px;
+    font-size: 22px;
+    line-height: 45px;
+    margin-right: 15px;
+    margin-left: 70px;
     cursor: pointer;
 `;
 
