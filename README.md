@@ -32,7 +32,6 @@ It requires [Node.js](https://nodejs.org/)  to run.
 Change directory to the project directory, and start the server :
 
 ```sh
-cd naverblog_clonecoding
 npm install --global yarn
 npm install axios
 npm install
@@ -43,7 +42,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 if already port-3000 is using, just kill the server and retry  it :
 ```sh
-cd naverblog_clonecoding
 npx kill-port 3000
 yarn start
 ```
