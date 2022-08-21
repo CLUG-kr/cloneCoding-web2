@@ -15,10 +15,10 @@ import { usePostDispatch } from '../PostContext';
 
 // styled-components 라이브러리를 사용하여 컴포넌트 스타일링
 const PostBlock = styled.div`
-    border-bottom: solid 0.5px #ced4da;
+    border-bottom: solid 0.5px #eeeeee;
     display: flex;
     width: 288px;
-    height: 132px;
+    height: 137px;
     margin-left: 13.5px;
   }
 `;
@@ -43,22 +43,23 @@ const ButtonBlock = styled.div`
     height: 17px;
     display: flex;
     cursor: pointer;
+    margin-left: 1px;
 `;
 
 const Heart = styled.div`
-    width: 17px;
-    height: 17px;
-    color: #9DD84B;
-    font-size: 17px;
+    width: 20px;
+    height: 20px;
+    color: #64dd17;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 `;
 const HeartEmpty = styled.div`
-    width: 17px;
-    height: 17px;
-    color: #808080;
-    font-size: 17px;
+    width: 20px;
+    height: 20px;
+    color: #c0c0c0;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,17 +68,18 @@ const HeartNum = styled.div`
     width: 17px;
     height: 17px;
     font-size: 10px;
+    color: #c0c0c0;
     text-align: left;
-    line-height: 1.5;
+    line-height: 2;
     margin-left: 2px;
     margin-right: 2px;
 `;
 
 const Comment = styled.div`
-    width: 17px;
-    height: 17px;
-    color: #808080;
-    font-size: 17px;
+    width: 20px;
+    height: 20px;
+    color: #c0c0c0;
+    font-size: 19px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,8 +88,9 @@ const CommentNum = styled.div`
     width: 17px;
     height: 17px;
     font-size: 10px;
+    color: #c0c0c0;
     text-align: left;
-    line-height: 1.5;
+    line-height: 2;
     margin-left: 4px;
 `;
 
@@ -99,7 +102,7 @@ const PostRightBlock = styled.div`
 const ContentBlock = styled.div`
     height: 81px;
     margin-top: 13.5px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 `;
 
 const Title = styled.div`
@@ -114,21 +117,21 @@ const Title = styled.div`
 const Content = styled.div`
     height: 35px;
     font-size: 10px;
-    color: #000000;
+    color: #A9A9A9;
     cursor: pointer;
 `;
 
 const Date = styled.div`
     font-size: 10px;
-    color: #000000;
+    color: #A9A9A9;
 `;
 
 const Share = styled.div`
-    width: 16px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     margin-left: 176px;
-    font-size: 17px;
-    color: #495057;
+    font-size: 20px;
+    color: #c0c0c0;
     cursor: pointer;
 `;
 
