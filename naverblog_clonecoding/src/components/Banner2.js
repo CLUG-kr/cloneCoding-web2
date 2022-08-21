@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { FiSearch } from 'react-icons/fi';
 import { BsList, BsThreeDotsVertical } from 'react-icons/bs';
 import Banner from './Banner';
-import Numeral from 'numeral';
+//import Numeral from 'numeral';
 
 
 /*
@@ -107,6 +107,9 @@ const BannerBottomMiddleBlock = styled.div`
     color: #FFFFFF;
 `;
 
+const ProfileBlock = styled.div`
+    display: flex;
+`;
 
 const ProfileName = styled.div`
     width: 170px;
@@ -117,6 +120,19 @@ const ProfileName = styled.div`
     margin-top: 12px;
     margin-bottom: 2px;
     line-height: 1.3;
+`;
+
+const Neighbor = styled.div`
+    width: 57px;
+    height: 13px;
+    font-size: 10px;
+    text-align: center;
+    border: solid 0.5px #FFFFFF;
+    border-radius: 100px;
+    margin-left: 7px;
+    margin-top: 11px;
+    margin-bottom: 2px;
+    cursor: pointer;
 `;
 
 const BannerBottomMiddleBottomBlock = styled.div`
@@ -190,7 +206,7 @@ function Banner2(){
   return(
     <div>
         {datas.data.banner.map(data => (
-            <BannerBlock style={{backgroundImage: `url(${data.bannerImage})`}}>
+            <BannerBlock key={data.blogId} style={{backgroundImage: `url(${data.bannerImage})`}}>
                 <FinderBlock>
                     <Finder onClick={() => {console.log("Finder click")}}><FiSearch/></Finder>
                     <List onClick={() => {console.log("list click")}}><BsList/></List>
@@ -202,7 +218,10 @@ function Banner2(){
                 <BannerBottomBlock>
                     <ProfileImage></ProfileImage>
                     <BannerBottomMiddleBlock>
-                        <ProfileName>{data.profileName}</ProfileName>
+                        <ProfileBlock>
+                            <ProfileName>{data.profileName}</ProfileName>
+                            <Neighbor onClick={() => {console.log("서로이웃")}}>서로이웃</Neighbor>
+                        </ProfileBlock>
                         <BannerBottomMiddleBottomBlock>{data.blogCategory} · {data.neighborNum.toLocaleString()}명의 이웃</BannerBottomMiddleBottomBlock>
                     </BannerBottomMiddleBlock>
                     <Finder2 onClick={() => {console.log("더보기")}}><BsThreeDotsVertical/></Finder2>
