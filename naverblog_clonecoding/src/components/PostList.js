@@ -16,8 +16,8 @@ import Post from './Post';
 
 // styled-components 라이브러리를 사용하여 컴포넌트 스타일링
 const PostFilterBlock = styled.div`
-    border-top: solid 0.5px #ced4da;
-    border-bottom: solid 0.5px #ced4da;
+    border-top: solid 0.5px #eeeeee;
+    border-bottom: solid 0.5px #eeeeee;
     
     width: 100%;
     height: 36.5px;
@@ -40,7 +40,7 @@ const PostCategory = styled.div`
     font-size: 12px;
     font-weight: 900;
     text-align: center;
-    line-height: 3.3;
+    line-height: 3;
     cursor: pointer;
 `;
 
@@ -57,7 +57,6 @@ const PostCategoryFolder = styled.div`
 const PostViewBlock = styled.div`
     width: 95.5px;
     height: 100%;
-    color: #ced4da;
     display: flex;
     align-items: center;
     margin-left: 153px;
@@ -66,8 +65,9 @@ const PostViewBlock = styled.div`
 const PostView = styled.div`
     width: 17px;
     height: 17px;
-    font-size: 17px;
+    font-size: 19px;
     margin-right: 13.5px;
+    margin-bottom: 5px;
     cursor: pointer;
 `;
 
@@ -128,9 +128,9 @@ function PostList() {
           <PostCategoryFolder><BsChevronDown/></PostCategoryFolder>
         </PostCategoryBlock>
         <PostViewBlock>
-          <PostView onClick={() => {console.log("PostView1 click")}}><HiViewGrid/></PostView>
-          <PostView onClick={() => {console.log("PostView2 click")}}><MdViewList/></PostView>
-          <PostView onClick={() => {console.log("PostView3 click")}}><MdViewAgenda/></PostView>
+          <PostView style={{color: "#c0c0c0"}} onClick={() => {console.log("PostView1 click")}}><HiViewGrid/></PostView>
+          <PostView style={{color: "black"}} onClick={() => {console.log("PostView2 click")}}><MdViewList/></PostView>
+          <PostView style={{color: "#c0c0c0"}} onClick={() => {console.log("PostView3 click")}}><MdViewAgenda/></PostView>
         </PostViewBlock>
       </PostFilterBlock>
       <PostListBlock>
