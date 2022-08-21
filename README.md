@@ -96,3 +96,14 @@ img 폴더 위치를 naverblog_clonecoding -> public으로 변경
 
 - 클릭 상태를 관리하기 위해서 context 파일 추가함!
 - 만들다가 실패해서 그냥 버튼 클릭하면 콘솔창에 뜨도록 코드 짜둠.
+
+## 이곳을 꼭 읽어주십시오
+
+### BlogTemplate2.js
+
+BlogTemplate.js에서 코드 고쳐도 계속 오류가 뜨길래 걍 똑같은 내용 복붙해서 BlogTemplate2.js를 만들었음. 
+
+### 배너
+
+- 배경은 잘 넣었고, 대신 비율 조정 해야 함. 일단 배치 조정하기 전에 풀리케 보냄!
+- Banner, BannerFrame 사용안하고 그냥 Banner2에 api까지 같이 넣어버림.

@@ -13,59 +13,59 @@ import { BsList, BsThreeDotsVertical } from 'react-icons/bs';
 
 // styled-components 라이브러리를 사용하여 컴포넌트 스타일링
 const BannerBlock = styled.div`
+border: 3px solid #FF0000;
     padding-top: 40px;
     padding-bottom: 2px;
     border-bottom: 1px solid #e9ecef;
-    background: #000000; 
-    background-image: "url('https://firebasestorage.googleapis.com/v0/b/sopt-server.appspot.com/o/blog_banner.png?alt=media&token=1f3417e5-1449-4010-a775-53fcd3ababee')";
+    
     h1 {
+        border: 3px solid #FFFFFF;
         margin: 0;
         font-size: 10px;
         color: #ffffff;
     }
     h2 {
+        border: 3px solid #FFFFFF;
         margin: 0;
         font-size: 20px;
         color: #ffffff;
     }
     h3 {
+        border: 3px solid #FFFFFF;
         margin: 0;
         font-size: 15px;
         color: #ffffff;
     }
 `;
 
-const bannerImage = styled.img`
-    width: 60px;
-    height: 60px
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-`;
 
 const FinderBlock = styled.div`
-    width: 100%;
-    height: 50px;
+border: 1px solid #FF0000;
+    width: 50px;
+    height: px;
     color: #ffffff;
     display: flex;
     margin-left: 260px;
 `;
 
 const Finder = styled.div`
-    width: 13px;
-    height: 13px;
+border: 1px solid #FF0000;
+    width: 20px;
+    height: 20px;
     font-size: 20px;
-    margin-right: 8px;
+    margin-right: 2px;
     cursor: pointer;
 `;
 
 const BannerMiddleBlock = styled.div`
+border: 1px solid #FF0000;
     margin-top: 80px;
     height: 50px; 
     margin-left: 13px;
 `;
 
 const Num = styled.div`
+border: 1px solid #FF0000;
     width: 15px;
     height: 13px;
     font-size: 10px;
@@ -75,6 +75,7 @@ const Num = styled.div`
 `;
 
 const BannerBottomBlock = styled.div`
+border: 1px solid #FF0000;
     margin-top: 30px;
     height: 70px; 
     margin-left: 13px;
@@ -83,6 +84,7 @@ const BannerBottomBlock = styled.div`
 `;
 
 const ProfileImage = styled.img`
+border: 1px solid #FF0000;
     width: 35px;
     height: 35px;
     border-radius: 100px;
@@ -93,6 +95,7 @@ const ProfileImage = styled.img`
 `;
 
 const BannerBottomMiddleBlock = styled.div`
+border: 1px solid #FF0000;
     width: 230px;
     height: 100px; 
     margin-left: 10px;
@@ -101,6 +104,7 @@ const BannerBottomMiddleBlock = styled.div`
 
 
 const ProfileName = styled.div`
+border: 1px solid #FF0000;
     width: 230px;
     margin: 0;
     font-size: 13px;
@@ -111,6 +115,7 @@ const ProfileName = styled.div`
 `;
 
 const BannerBottomMiddleBottomBlock = styled.div`
+border: 1px solid #FF0000;
     width: 230px;
     height: 30px;
     margin: 0;
@@ -122,15 +127,46 @@ const BannerBottomMiddleBottomBlock = styled.div`
 `;
 
 const Finder2 = styled.div`
+border: 1px solid #FF0000;
     margin-top: 8px;
-    width: 15px;
-    height: 15px;
-    transform: translate(-22%, 0%) scale(0.8);
+    width: 25px;
+    height: 25px;
     font-size: 25px;
+    line-height: 0.5;
+    text-align: center;
     margin-right: 8px;
     cursor: pointer;
 `;
 
+/*
+function Banner( _id, _bannerImage, _todayCount, _totalCount, _blogName, _profileName, _blogCategory, _neighborNum ) {
+    return (
+      <BannerBlock >
+          <div style={{ backgroundImage: `url(${_bannerImage})` }}>
+          </div>
+          <div style={{ backgroundImage: `url(${_bannerImage})` }}>
+          </div>
+          <FinderBlock>
+              <Finder onClick={() => {console.log("Finder click")}}><FiSearch/></Finder>
+              <Finder onClick={() => {console.log("list click")}}><BsList/></Finder>
+          </FinderBlock>
+          <BannerMiddleBlock>
+              <Num>{_todayCount}</Num>
+              <h1>오늘 {_todayCount} · 전체 {_totalCount}</h1>
+              <h2>{_blogName} </h2>
+          </BannerMiddleBlock>
+          <BannerBottomBlock>
+              <ProfileImage></ProfileImage>
+              <BannerBottomMiddleBlock>
+                  <ProfileName>{_profileName}</ProfileName>
+                  <BannerBottomMiddleBottomBlock>{_blogCategory} {_neighborNum}명의 이웃</BannerBottomMiddleBottomBlock>
+              </BannerBottomMiddleBlock>
+              <Finder2 onClick={() => {console.log("더보기")}}><BsThreeDotsVertical/></Finder2>
+          </BannerBottomBlock>
+      </BannerBlock>
+    );
+  }
+*/
 
 function Banner( _id, _bannerImage, _todayCount, _totalCount, _blogName, _profileName, _blogCategory, _neighborNum ) {
   return (
@@ -161,3 +197,4 @@ function Banner( _id, _bannerImage, _todayCount, _totalCount, _blogName, _profil
 }
 
 export default Banner;
+

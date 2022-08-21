@@ -18,60 +18,63 @@ import Post from './Post';
 const PostFilterBlock = styled.div`
     border-top: solid 0.5px #ced4da;
     border-bottom: solid 0.5px #ced4da;
+    
     width: 100%;
-    height: 30px;
+    height: 36.5px;
+    
+    margin-top: 12.5px;
     display: felx;
     align-items: center;
 `;
 
 const PostCategoryBlock = styled.div`
-    width: 50px;
+    width: 56px;
     height: 100%;
     display: flex;
-    margin-left: 10px;
+    margin-left: 13.5px;
 `;
 
 const PostCategory = styled.div`
-    width: 40px;
+    width: 40.5px;
     height: 100%;
-    font-size: xx-small;
+    font-size: 12px;
     font-weight: 900;
     text-align: center;
-    line-height: 3;
+    line-height: 3.3;
     cursor: pointer;
 `;
 
 const PostCategoryFolder = styled.div`
-    width: 20px;
+    width: 15.5px;
     height: 100%;
     font-size: 10px;
     color: #808080;
     text-align: right;
-    line-height: 3.2;
+    line-height: 4;
     cursor: pointer;
 `;
 
 const PostViewBlock = styled.div`
-    width: 58px;
+    width: 95.5px;
     height: 100%;
     color: #ced4da;
     display: flex;
     align-items: center;
-    margin-left: 118px;
+    margin-left: 153px;
 `;
 
 const PostView = styled.div`
-    width: 13px;
-    height: 13px;
-    font-size: 13px;
-    margin-right: 8px;
+    width: 17px;
+    height: 17px;
+    font-size: 17px;
+    margin-right: 13.5px;
     cursor: pointer;
 `;
 
 
 const PostListBlock = styled.div`
     flex: 1;
-    width: 242.65px;
+    width: 315px;
     overflow-y: auto;
 `;
 
@@ -150,3 +153,12 @@ function PostList() {
 }
 
 export default PostList;
+
+
+/*
+
+{datas.data.banner.map(data => (
+        <img src={data.bannerImage} /> 
+      ))}
+
+  */

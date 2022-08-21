@@ -4,6 +4,12 @@ import styled from 'styled-components';
 import Banner from './Banner';
 
 
+const BannerFrameBlock = styled.div`
+    //flex: 1;
+    width: 315px;
+    //overflow-y: auto;
+`;
+
 //BannerFrame 컴포넌트 작성하기
 function BannerFrame() {
     //요청 결과, 로딩상태, 에러를 관리해줄 useState 구문들
@@ -38,14 +44,15 @@ function BannerFrame() {
     useEffect(() => {fetchDatas();}, []);
 
     // 로딩중일때, 에러발생했을때, 받아온 데이터가 비었을 때
-    if (loading) return <div>로딩중...</div>;
+    if (loading) return <div>로딩중2...</div>;
     if (error) return <div>에러가 발생했습니다.</div>;
     if (!datas) return null;
 
     // 위의 조건들에서 모두 벗어났을 때는 다음을 리턴해라
     // 근데 받아온 데이터가 몇개일지 모르니까 map 사용
+    
     return (
-        <>
+        <BannerFrameBlock>
             {datas.data.banner.map(data => (
                 <Banner
                     key={data.blogId}
@@ -58,10 +65,19 @@ function BannerFrame() {
                     _blogCategory={data.blogCategory}
                     _neighborNum={data.neighborNum}
                 />
-
             ))}
-        </>
+        </BannerFrameBlock>
     );
+    
+    /*
+    return (
+        <BannerFrameBlock>
+            {datas.data.banner.map(data => (
+                <img src={data.bannerImage}/>
+            ))}
+        </BannerFrameBlock>
+    );
+    */
 }
 
 export default BannerFrame;
