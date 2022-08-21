@@ -2,8 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const BlogTemplateBlock = styled.div`
-  width: 242.65px;
-  height: 497px;
+  width: 315px;
+  height: 830px;
+  //width: 242.65px;
+  //height: 497px;
 
   //position: relative; /* 추후 박스 하단에 추가 버튼을 위치시키기 위한 설정 */
   background: white;
