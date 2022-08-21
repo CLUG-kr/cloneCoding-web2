@@ -53,10 +53,14 @@ yarn start
 ### BlogTemplate
 
 - 설명: 모든 컴포넌트를 차곡차곡 올릴 템플릿. 하얀색 박스. 아이폰 13 규격에 맞춰 사이즈 제단
+
+### BannerTemplate
+
+- 설명: map을 사용하여 banner api를 렌더링
   
 ### Banner
 
-- 배너 정보들을 출력
+- 설명: api에서 banner 정보 받아다가 출력.
 
 ### PostList
 
